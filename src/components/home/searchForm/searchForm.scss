@@ -1,0 +1,54 @@
+@import '../../../common/colors.scss';
+
+.topnav {
+  overflow: hidden;
+  background-color: $whisper-color;
+}
+.container{
+  margin: 10px;
+  text-align: center;
+}
+.app-title {
+  margin-bottom: 15px;
+}
+
+.search {
+  width: 50%;
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+
+.search .form-control {
+  width: 100%;
+  padding: 5px;
+  height: 36px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.search .form-control:focus{
+  color: $black-color;
+}
+
+.searchButton {
+  height: 36px;
+  background: $gainsboro-color;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 100%;
+  padding: 6px 2%;
+  color: $black-color;
+  margin-left: 4px;
+}
+.searchButton:hover {
+  background: $white-color;
+}
+
+@media (max-width: 700px) {
+  .search {
+    width: 85%;
+  }
+}
+

@@ -1,0 +1,15 @@
+@import '../../../common/colors.scss';
+
+.topnav1 {
+  overflow: hidden;
+  background-color: $dark-charcoal-color;
+}
+.topnav1 a {
+  float: center;
+  display: block;
+  color: $white-color;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}

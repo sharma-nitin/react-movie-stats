@@ -1,0 +1,64 @@
+@import '../../../common/colors.scss';
+
+.movie-title{
+  color: $white-color;
+}
+.detail-wrapper {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.detail-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  color: $dark-charcoal-color;
+}
+.movie-poster {
+border: 1px solid $white-color;
+padding: 20px;
+text-align: center;
+}
+.movie-poster > img {
+  width: 100%;
+  height: 100%;
+}
+.movie-detail {
+text-align: left;
+}
+.movie-detail h2 {
+margin: 0px 0px 5px;
+padding-left: 10px;
+}
+
+.movie-detail > ul {
+list-style-type: none;
+padding: 0px 10px;
+margin-bottom: 15px;
+}
+.movie-detail > ul li {
+border: 1px solid $white-color;
+padding: 10px 20px;
+border-top: none;
+}
+.movie-detail > ul li:first-child {
+border-top: 1px solid $white-color;
+}
+.movie-detail > ul li span:first-child {
+padding-right: 5px;
+}
+.text-center {
+text-align: center;
+}
+@media (max-width: 700px) {
+.detail-container {
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+}
+.movie-poster > img {
+  display: inline;
+  width: auto;
+}
+}
